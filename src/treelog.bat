@@ -1,0 +1,9 @@
+@ECHO OFF
+
+SETLOCAL
+SET CURT_DIR=%CD%
+SET OUTPUT_DIR=%HOME%\Desktop\tree.log
+ECHO "IN PROGRESS..."
+C:\Windows\system32\tree.com /A /F %CURT_DIR% > %OUTPUT_DIR%
+ENDLOCAL
+
